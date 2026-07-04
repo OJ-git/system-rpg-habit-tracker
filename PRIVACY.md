@@ -1,8 +1,8 @@
-# Privacy Policy — Life is a game
+# Privacy Policy — System: RPG Habit Tracker
 
-**Last updated: June 25, 2026**
+**Last updated: July 4, 2026**
 
-This privacy policy describes how the **Life is a game** mobile app ("the App", "we", "our") handles your information. Plain English, no surprises.
+This privacy policy describes how the **System: RPG Habit Tracker** mobile app ("the App", "we", "our") handles your information. Plain English, no surprises.
 
 ---
 
@@ -106,7 +106,7 @@ You can revoke any of these at any time from iOS Settings.
 - **Correction**: edit any profile field at any time inside the App.
 - **Deletion**:
   - Delete the App from your iPhone to remove all on-device data.
-  - For iCloud data: iPhone Settings → Apple ID → iCloud → Manage Storage → Life is a game → Delete Data.
+  - For iCloud data: iPhone Settings → Apple ID → iCloud → Manage Storage → System: RPG Habit Tracker → Delete Data.
   - For social data: open the App → Status tab → System Settings → Delete Social Account. This is a hard cascade delete and cannot be undone.
 - **Portability**: contact us at the email below for an export of any data we hold on Supabase.
 
