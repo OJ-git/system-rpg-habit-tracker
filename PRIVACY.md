@@ -1,8 +1,8 @@
-# Privacy Policy — System: RPG Habit Tracker
+# Privacy Policy — Odyssey: Goals & Habit RPG
 
-**Last updated: July 4, 2026**
+**Last updated: August 26, 2026**
 
-This privacy policy describes how the **System: RPG Habit Tracker** mobile app ("the App", "we", "our") handles your information. Plain English, no surprises.
+This privacy policy describes how the **Odyssey: Goals & Habit RPG** mobile app ("the App", "we", "our") handles your information. Plain English, no surprises.
 
 ---
 
@@ -40,11 +40,15 @@ When iCloud Drive is enabled on your iPhone, SwiftData automatically syncs the c
 
 The social tab is disabled by default. If you choose to sign in with Apple to use Friends and the Feed, the following is sent to our backend (Supabase):
 
-- **Sign in with Apple identifier**: an Apple-issued unique ID. We do **not** receive your email or full name unless you grant them at sign-in.
+- **Sign in with Apple identifier**: an Apple-issued unique account ID. We request only your name (used to suggest a starting username); **we do not request your email address**. You can change your username at any time.
 - **Username** (which you set yourself).
 - **Friend connections**: who you've added as a friend.
 - **Feed posts** you explicitly publish: text caption, optional photo, the quest stats you choose to attach (XP, gold, quests completed), timestamp.
+- **Reactions**: the fire/sword/crown reactions you add to a friend's post.
+- **Reports and blocks**: if you report a post or block another player, we store that action so we can review reported content and enforce the block. A report records the reported post/user, a reason you pick from a fixed list, and your account ID.
 - **Photo metadata**: stripped before upload — EXIF, GPS, and device data are removed by the app before any photo touches the network.
+
+**Moderation.** Posts and captions are user-generated. Every post from another player has **Report** and **Block** options, and you can review and reverse your blocks under Guild → Blocked Players. We review reported content and remove violating content or accounts.
 
 ### 1.4 Purchases
 
@@ -53,6 +57,18 @@ Subscriptions are handled entirely by Apple via StoreKit 2. We receive only a ve
 ### 1.5 Notifications
 
 We send local notifications (the daily reminder) from your device only. No remote notifications, no third-party push provider.
+
+### 1.6 Anonymous usage events
+
+When you use the app, we log **anonymous** events to help us understand where users drop off during onboarding so we can improve it. Each event contains:
+
+- A random per-install ID (a UUID generated the first time you launch the app and stored on your device). This ID is **not** your Apple ID, email, name, or any other identifier that can point back to you.
+- The name of a screen you viewed (e.g. "promise", "paywall") or an action (e.g. "paywall_purchase_started").
+- The app version and iOS platform.
+
+We do **not** log the content you typed (your name, your goals, your quests), the photos you take, or anything you write. Only screen names and simple counts (like "how many struggles did you select" — not which ones).
+
+These events are stored on our own Supabase database. They are not shared with third parties. We do not use them for advertising and we do not link them to your identity unless you later sign in with Apple to use the social features, in which case we may associate the anonymous ID with your account so we can debug reported issues.
 
 ---
 
@@ -96,7 +112,7 @@ You can revoke any of these at any time from iOS Settings.
 
 - **On-device data**: kept until you delete the App or reset it.
 - **iCloud data**: kept until you delete it from iCloud.
-- **Social data** (if opted in): kept until you delete your social account from within the App. Account deletion is a hard cascade — your profile, posts, photos, and friend connections are permanently removed from Supabase.
+- **Social data** (if opted in): kept until you delete your social account from within the App. Account deletion is a hard cascade — your profile, posts, photos, reactions, friend connections, and blocks are permanently removed from Supabase. Reports you filed are also removed.
 
 ---
 
@@ -106,7 +122,7 @@ You can revoke any of these at any time from iOS Settings.
 - **Correction**: edit any profile field at any time inside the App.
 - **Deletion**:
   - Delete the App from your iPhone to remove all on-device data.
-  - For iCloud data: iPhone Settings → Apple ID → iCloud → Manage Storage → System: RPG Habit Tracker → Delete Data.
+  - For iCloud data: iPhone Settings → Apple ID → iCloud → Manage Storage → Odyssey: Goals & Habit RPG → Delete Data.
   - For social data: open the App → Status tab → System Settings → Delete Social Account. This is a hard cascade delete and cannot be undone.
 - **Portability**: contact us at the email below for an export of any data we hold on Supabase.
 
